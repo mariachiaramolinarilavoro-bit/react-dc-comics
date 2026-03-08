@@ -1,11 +1,16 @@
 import './App.css'
+import AppHeader from './components/AppHeader'
+import AppMain from './components/AppMain'
+import AppFooter from './components/AppFooter'
 
 function App() {
 
 
   return (
     <>
-  <h1>Hello word</h1>
+      <AppHeader />
+      <AppMain />
+      <AppFooter />
     </>
   )
 }
