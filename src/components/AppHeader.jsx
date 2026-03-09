@@ -6,7 +6,7 @@ export default function AppHeader() {
             <nav className="navbar bg-body-tertiary">
                 <div className="container">
                     <a className="navbar-brand" href="#">
-                        <img src={logo} alt="dc-logo" width="40" />
+                        <img src={logo} alt="dc-logo" width="60" />
                     </a>
                     <ul className="nav justify-content-end">
                         <li className="nav-item">

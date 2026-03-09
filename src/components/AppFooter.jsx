@@ -7,7 +7,7 @@ import periscope from '../assets/img/footer-periscope.png'
 export default function AppFooter() {
     return (
         <footer>
-            <section className="wall container d-flex gap-5 bg-dark text-white py-5">
+            <section className="wall container d-flex gap-5 text-white py-5">
                 <div className="row">
                     <div className="col-4 text-start">
                         <h5>DC COMICS</h5>
@@ -68,7 +68,7 @@ export default function AppFooter() {
                             </button>
                         </div>
                         
-                        <div className="col-6 d-flex align-items-center gap-3">
+                        <div className="col-6 d-flex align-items-center justify-content-end gap-3">
                             <div className="text-primary fw-bold">FOLLOW US</div>
                             <img src={facebook} alt="facebook" width="30px"></img>
                             <img src={twitter} alt="twitter" width="30px"></img>
