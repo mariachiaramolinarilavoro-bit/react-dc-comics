@@ -14,27 +14,29 @@ export default function AppMain() {
                 </div>
             </section>
 
-            <section className="container bg-primary py-4">
-                <div className="row d-flex align-items-center justify-content-center">
-                    <div className="col text-light">
-                        <img src={digital} alt="logo" width="40px" className="mx-2"></img>
-                        DIGITAL COMICS
-                    </div>
-                    <div className="col text-light">
-                        <img src={merchandise} alt="merchandise" width="40px" className="mx-2"></img>
-                        DC MERCHANDISE
-                    </div>
-                    <div className="col text-light">
-                        <img src={subscriptions} alt="merchandise" width="40px" className="mx-2"></img>
-                        SUBSCRIPTION
-                    </div>
-                    <div className="col text-light">
-                        <img src={shop} alt="merchandise" width="30px" className="mx-2"></img>
-                        COMIC SHOP LOCATOR
-                    </div>
-                    <div className="col text-light">
-                        <img src={visa} alt="merchandise" width="40px" className="mx-2"></img>
-                        DC POWER VISA
+            <section className="bg-primary py-4">
+                <div className="container">
+                    <div className="row d-flex align-items-center justify-content-center">
+                        <div className="col text-light">
+                            <img src={digital} alt="logo" width="40px" className="mx-2"></img>
+                            DIGITAL COMICS
+                        </div>
+                        <div className="col text-light">
+                            <img src={merchandise} alt="merchandise" width="40px" className="mx-2"></img>
+                            DC MERCHANDISE
+                        </div>
+                        <div className="col text-light">
+                            <img src={subscriptions} alt="merchandise" width="40px" className="mx-2"></img>
+                            SUBSCRIPTION
+                        </div>
+                        <div className="col text-light">
+                            <img src={shop} alt="merchandise" width="30px" className="mx-2"></img>
+                            COMIC SHOP LOCATOR
+                        </div>
+                        <div className="col text-light">
+                            <img src={visa} alt="merchandise" width="40px" className="mx-2"></img>
+                            DC POWER VISA
+                        </div>
                     </div>
                 </div>
             </section>

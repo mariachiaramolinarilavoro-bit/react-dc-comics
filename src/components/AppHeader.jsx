@@ -3,7 +3,7 @@ import logo from '../assets/img/dc-logo.png'
 export default function AppHeader() {
     return (
         <header>
-            <nav className="navbar bg-body-tertiary">
+            <nav className="navbar bg-body-tertiary p-0">
                 <div className="container">
                     <a className="navbar-brand" href="#">
                         <img src={logo} alt="dc-logo" width="60" />
@@ -13,7 +13,7 @@ export default function AppHeader() {
                             <a className="nav-link text-dark" href="#">CHARACTERS</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">COMICS</a>
+                            <a className="string nav-link active" aria-current="page" href="#">COMICS</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link text-dark" href="#">MOVIE</a>

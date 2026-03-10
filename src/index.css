@@ -2,7 +2,22 @@
   font-family: 'Open Sans Variable', sans-serif;
 }
 
-.wall{
-  background-image: url('../src/assets/img/footer-bg.jpg');
-  background-size: cover;
+footer{
+  background-image: url(../src/assets/img/dc-logo-bg.png), url('../src/assets/img/footer-bg.jpg');
+  background-size: 700px, cover;
+  background-repeat: no-repeat;
+  background-position: right, center;
+}
+
+.string{
+  position: relative;
+}
+
+.string::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -15px;
+  border-bottom: 5px solid #0282F9;
 }
