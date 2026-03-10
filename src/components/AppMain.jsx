@@ -3,14 +3,29 @@ import merchandise from '../assets/img/buy-comics-merchandise.png'
 import subscriptions from '../assets/img/buy-comics-subscriptions.png'
 import shop from '../assets/img/buy-comics-shop-locator.png'
 import visa from '../assets/img/buy-dc-power-visa.svg'
+import comics from '../components/comics'
 
 export default function AppMain() {
     return (
         <main>
+            <div className="jumbotron"></div>
             <section className="bg-dark text-white py-4">
                 <div className="container">
-                    <div className="row">
-                        <h5 className="col-5">Content goes here</h5></div>
+                    <div className="row row-cols-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 rounded-0">
+
+                        {comics.map((comic) => {
+                            return (
+                                <div className="col" key={comic.id}>
+                                    <div className="card-body">
+                                        <img src={comic.thumb} className="card-img-top" />
+                                        <div className="col text-uppercase card-title">{comic.series}</div>
+                                    </div>
+                                </div>
+                            )
+                        }
+                        )}
+                        
+                    </div>
                 </div>
             </section>
 
