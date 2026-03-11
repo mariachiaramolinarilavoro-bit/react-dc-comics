@@ -9,22 +9,26 @@ export default function AppMain() {
     return (
         <main>
             <div className="jumbotron"></div>
-            <section className="bg-dark text-white py-4">
+            <section className="bg-dark text-white px-5 pb-4">
+                <span className="series bg-primary p-2 px-4">CURRENT SERIES</span>
                 <div className="container">
-                    <div className="row row-cols-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 rounded-0">
+                    <div className="row row-cols-1 row-cols-md-3 row-cols-lg-5 row-cols-xl-6 rounded-0 m-5">
 
                         {comics.map((comic) => {
                             return (
-                                <div className="col" key={comic.id}>
+                                <div className="col col-sm-5 col-md-4 col-lg-3" key={comic.id}>
                                     <div className="card-body">
-                                        <img src={comic.thumb} className="card-img-top" />
-                                        <div className="col text-uppercase card-title">{comic.series}</div>
+                                        <img src={comic.thumb} className="img-card card-img-top" />
+                                        <div className="col text-uppercase card-title p-2">{comic.series}</div>
                                     </div>
                                 </div>
                             )
                         }
                         )}
-                        
+
+                    </div>
+                    <div className="text-center">
+                        <span className="bg-primary p-2 px-5">LOAD MORE</span>
                     </div>
                 </div>
             </section>

@@ -2,18 +2,18 @@
   font-family: 'Open Sans Variable', sans-serif;
 }
 
-footer{
+footer {
   background-image: url(../src/assets/img/dc-logo-bg.png), url('../src/assets/img/footer-bg.jpg');
   background-size: 700px, cover;
   background-repeat: no-repeat;
   background-position: right, center;
 }
 
-.string{
+.string {
   position: relative;
 }
 
-.string::after{
+.string::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -22,8 +22,19 @@ footer{
   border-bottom: 5px solid #0282F9;
 }
 
-.jumbotron{
+.jumbotron {
   background-image: url(../src/assets/img/jumbotron.jpg);
   height: 50vh;
   background-size: cover;
+}
+
+.img-card {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.series{
+  margin-left: 110px;
 }
