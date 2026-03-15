@@ -3,9 +3,9 @@ import merchandise from '../assets/img/buy-comics-merchandise.png'
 import subscriptions from '../assets/img/buy-comics-subscriptions.png'
 import shop from '../assets/img/buy-comics-shop-locator.png'
 import visa from '../assets/img/buy-dc-power-visa.svg'
-import comics from '../components/comics'
+import AppCard from './AppCard'
 
-export default function AppMain() {
+export default function AppMain({ comics }) {
     return (
         <main>
             <div className="jumbotron"></div>
@@ -14,17 +14,9 @@ export default function AppMain() {
                 <div className="container">
                     <div className="row row-cols-1 row-cols-md-3 row-cols-lg-5 row-cols-xl-6 rounded-0 m-5">
 
-                        {comics.map((comic) => {
-                            return (
-                                <div className="col col-sm-5 col-md-4 col-lg-3" key={comic.id}>
-                                    <div className="card-body">
-                                        <img src={comic.thumb} className="img-card card-img-top" />
-                                        <div className="col text-uppercase card-title p-2">{comic.series}</div>
-                                    </div>
-                                </div>
-                            )
-                        }
-                        )}
+                        {comics.map((comic) => (
+                            <AppCard key={comic.id} comic={comic} />
+                        ))}
 
                     </div>
                     <div className="text-center">
